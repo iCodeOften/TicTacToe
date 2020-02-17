@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button onclick="choiceCircle()">O</button>
+      </div>
+      <div class="col">
+        <button onclick="choiceX()">X</button>
+      </div>
+      <div class="col">
+        <p>You picked:</p>
+        <p id="colorChoice"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="boxes" id="topL"></div>
+      </div>
+      <div class="col">
+        <div class="boxes" id="topM"></div>
+      </div>
+      <div class="col">
+        <div class="boxes" id="topR"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><div class="boxes bg-primary" id="midL">
+      </div></div>
+      <div class="col"><div class="boxes bg-primary" id="midM"></div></div>
+      <div class="col"><div class="boxes bg-primary" id="midR"></div></div>
+
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="boxes" id="botL"></div>
+      </div>
+      <div class="col">
+        <div class="boxes" id="botM"></div>
+      </div>
+      <div class="col">
+        <div class="boxes" id="botR" onclick=""></div>
+      </div>
+
+    </div>
+    <div id="loser" class="text-danger h1" hidden>You Lost</div>
+    <div id="winner" class="text-success h1" hidden>You won!</div>
+  </div>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
